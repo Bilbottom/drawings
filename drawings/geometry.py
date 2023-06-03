@@ -118,3 +118,9 @@ class Line:
         :return: A new rotated line.
         """
         return Line(self.start, self.start + (self.end - self.start).rotate(angle))
+
+    def as_vector(self) -> Point:
+        """
+        Return the line as a vector.
+        """
+        return self.end - self.start

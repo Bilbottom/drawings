@@ -308,3 +308,11 @@ def test__line__rotate(line: Line, angle: Number, expected: Line):
     Test the ``Line.rotate()`` method.
     """
     assert line.rotate(angle) == expected
+
+
+def test__line__as_vector():
+    """
+    Test the ``Line.rotate()`` method.
+    """
+    line = Line(1, 2)
+    assert line.as_vector() == Point(1, 1)
